@@ -155,7 +155,51 @@ body{
     width: 100vw;
     height: 100vh;
     display: flex;
-    
+    overflow-x: hidden;
     align-items: center;
     flex-direction: column;
   }
+  .image{
+    float: right;
+    width: 50%;
+    overflow: hidden;
+    height: 400px;
+    border-radius: 100px 0 0 300px;
+    margin-top: 20px;
+  }
+  .image img{
+    width: 100%;
+
+  }
+  .archive div div{
+    width: 300px;
+    background-color: rgb(106, 106, 193);
+    border-radius: 7px;
+    text-align: center;
+    color: white;
+  }
+  main{
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+ ::-webkit-scrollbar{
+    display: none;
+ }
+.archive .container{
+    display: flex;
+    overflow-y:scroll ;
+    gap: 10px;
+   
+
+}
+h2{
+    text-align: center;
+    width: 100%;
+}
+.archive{
+    width: 100%;
+}
+.archive img{
+    height: 40%;
+    width: 100%;
+}
