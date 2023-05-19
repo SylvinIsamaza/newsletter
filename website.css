@@ -14,6 +14,7 @@ body {
     color: white;
     position: sticky;
     top: 0;
+    width: 100%;
     
   }
   nav div {
@@ -46,6 +47,10 @@ body {
   /* Archive Page */
   .archive {
     padding: 20px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
   }
   
   .archive ul {
@@ -133,7 +138,7 @@ body {
     
   } 
   main{
-height: 100vh;
+height:90vh;
   }
   #button{
     background-color: rgb(8, 132, 193);
@@ -145,4 +150,12 @@ height: 100vh;
     border: none;
     width: 250px;
     border-radius: 7px;
+  }
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    
+    align-items: center;
+    flex-direction: column;
   }
