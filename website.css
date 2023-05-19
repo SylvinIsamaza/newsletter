@@ -1,0 +1,148 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navigation Menu */
+  nav{
+    background-color:rgb(8, 132, 193);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    color: white;
+    position: sticky;
+    top: 0;
+    
+  }
+  nav div {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+  justify-content: space-between;
+   
+    padding: 10px;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  /* Home Page */
+  .home {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Archive Page */
+  .archive {
+    padding: 20px;
+  }
+  
+  .archive ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .archive li {
+    margin-bottom: 10px;
+  }
+  
+  /* Subscription Page */
+  .subscription {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .subscription form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .subscription label {
+    margin-right: 10px;
+  }
+  
+  .subscription input[type="email"],
+  .subscription button[type="submit"] {
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .subscription button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  .home h1,
+  .home p,
+  .archive h2,
+  .subscription h2 {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .archive ul li,
+  .subscription form {
+    animation: slideIn 1s
+  }
+
+  footer{
+    background-color:rgb(4, 32, 45);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    
+    width: 100%;
+    bottom: 0;
+    
+  } 
+  main{
+height: 100vh;
+  }
+  #button{
+    background-color: rgb(8, 132, 193);
+    border-radius: 7px;
+    margin-left: 10px;
+  }
+  input{
+    background-color: rgba(193, 193, 193, 0.602);
+    border: none;
+    width: 250px;
+    border-radius: 7px;
+  }
